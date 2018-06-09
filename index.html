@@ -1,0 +1,45 @@
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<head>
+	<meta charset="utf-8">
+	<title>2048 by Jon Jee</title>
+<style>
+tr,td{
+	width: 60px;
+	height: 65px;
+	border-radius: 10px;
+	background-color: rgb(255,230,220);
+}
+table#main_map{
+	border-spacing: 5px;
+	margin: 10px;
+	text-align: center;
+	font: 30px/1.5;
+	font-weight: bold;
+	color: gray;
+	border: 3px solid gray;
+	border-radius: 10px;
+	padding: 5px;
+}
+span.score_span{
+	margin: 20px;
+	font: 20px/1.5;
+}
+.ctrl{
+	width: 50px;
+}
+</style>
+</head>
+<body>
+<span class="score_span">score: <span id="score">0</span></span>
+<table id="main_map"></table>
+
+<input type="button" value="&nbsp↑&nbsp" onclick="goUp();" class="ctrl" style="position:absolute; right: 50px; top: 350px;"></input>
+<input type="button" value="←" onclick="goLeft();" class="ctrl" style="position:absolute; right: 100px; top: 400px;"></input>
+<input type="button" value="→" onclick="goRight();" class="ctrl" style="position:absolute; right: 0px; top: 400px;"></input>
+<input type="button" value="&nbsp↓&nbsp" onclick="goDown();" class="ctrl" style="position:absolute; right: 50px; top: 450px;"></input>
+
+<script src="js/2048.min.js">
+</script>
+</body>
+</html>
